@@ -1,11 +1,12 @@
 import app from '../app'
+import tpl from 'html!./index.html'
 
 app.directive('homeApp', () => {
   return {
     restrict: 'E',
     controllerAs: 'vm',
     controller,
-    template: '<h1>123</h1>',
+    template: tpl,
   }
 })
 
