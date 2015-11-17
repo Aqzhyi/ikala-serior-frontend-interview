@@ -6,5 +6,10 @@ app.factory('Images', [
 ])
 
 function factory($resource) {
-  return $resource('/images')
+  return $resource('/images', {}, {
+    query: {
+      method: 'GET',
+      isArray: true,
+    }
+  })
 }

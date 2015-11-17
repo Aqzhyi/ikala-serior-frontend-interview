@@ -18,11 +18,14 @@ controller.$inject = [
 function controller($q, Images) {
   let vm = this
 
-  vm.imagesUpload = []
-  vm.imagesPreview = []
   vm.images = Images.query()
+  vm.imagesPreview = []
+  vm.imagesSelected = imagesSelected
+  vm.imagesUpload = []
+  vm.upload = upload
 
-  vm.imagesSelected = ($files) => {
+  ///// implementations
+  function imagesSelected($files) {
     vm.imagesPreview = []
     vm.imagesUpload = []
     ;[].forEach.call($files, (file) => {
@@ -36,7 +39,7 @@ function controller($q, Images) {
     })
   }
 
-  vm.upload = () => {
+  function upload() {
     let uploadPromises = []
 
     vm.imagesUpload.forEach((dataURL) => {
