@@ -1,7 +1,11 @@
 <div class="container">
   <h1> 摸擬圖片上傳 </h1>
-  <button type="button" class="btn btn-primary">上傳圖片</button>
+  <input type="file" class="btn btn-primary" value="上傳圖片" multiple files-selected="vm.imagesSelected($files)">
   <div class="row">
     <img class="img-circle col-xs-12 col-sm-6 col-md-4" ng-repeat="img in vm.images" ng-src="{{img}}">
+  </div>
+  <div class="row">
+    <h2>previews</h2>
+    <img class="img-circle col-xs-12 col-sm-6 col-md-4" ng-repeat="img in vm.imagesPreview" ng-src="{{img}}">
   </div>
 </div>
