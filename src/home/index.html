@@ -8,4 +8,6 @@
     <h2>previews</h2>
     <img class="img-circle col-xs-12 col-sm-6 col-md-4" ng-repeat="img in vm.imagesPreview" ng-src="{{img}}">
   </div>
+
+  <button type="button" class="btn btn-primary" ng-click="vm.upload()" ng-show="vm.imagesUpload.length">上傳</button>
 </div>
