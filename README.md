@@ -4,4 +4,4 @@ This app is based-on Ruby on Rails. The extra folders `src` is written in ES2015
 
 ## To develop
 
-type `rails server && webpack --progress --colors --watch` and open `http://0.0.0.0:3000` to start develop single page application with **webpack**.
+type `rails server`, `webpack --progress --colors --watch` on CLI and open `http://0.0.0.0:3000` to start develop single page application with **webpack**.
