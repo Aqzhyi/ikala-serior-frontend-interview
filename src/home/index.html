@@ -1,5 +1,7 @@
-<h1> 摸擬圖片上傳 </h1>
-
-<div class="">
-  <button type="button" name="button">上傳圖片</button>
+<div class="container">
+  <h1> 摸擬圖片上傳 </h1>
+  <button type="button" class="btn btn-primary">上傳圖片</button>
+  <div class="row">
+    <img class="img-circle col-xs-12 col-sm-6 col-md-4" ng-repeat="img in vm.images" ng-src="{{img}}">
+  </div>
 </div>

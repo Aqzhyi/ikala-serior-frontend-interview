@@ -10,8 +10,12 @@ app.directive('homeApp', () => {
   }
 })
 
-function controller() {
+controller.$inject = [
+  'Images'
+]
+
+function controller(Images) {
   let vm = this
 
-  console.log('angular bootstrap')
+  vm.images = Images.query()
 }
