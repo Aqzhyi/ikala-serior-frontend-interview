@@ -4,10 +4,10 @@ class ImagesController < ApplicationController
       format.json {
         render text: '
           [
-            "https://placehold.it/200x200&text=imgA",
-            "https://placehold.it/200x200&text=imgB",
-            "https://placehold.it/200x200&text=imgC",
-            "https://placehold.it/200x200&text=imgD"
+            {"url": "https://placehold.it/200x200&text=imgA"},
+            {"url": "https://placehold.it/200x200&text=imgB"},
+            {"url": "https://placehold.it/200x200&text=imgC"},
+            {"url": "https://placehold.it/200x200&text=imgD"}
           ]
         '
       }
