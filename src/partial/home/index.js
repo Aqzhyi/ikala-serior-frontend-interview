@@ -1,4 +1,4 @@
-import app from '../app'
+import app from '../../app'
 import tpl from 'html!./index.html'
 
 app.directive('homeApp', () => {
