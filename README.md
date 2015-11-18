@@ -1,3 +1,9 @@
+## Features
+
+1. Select images then upload
+2. Drag and drop to upload images
+3. upload images from your clipboard
+
 ## Structure
 
 This app is based-on Ruby on Rails. The extra folders `src` is written in ES2015 and will be compiled into `./app/assets/javascripts/home.js` using **webpack** as a bundle.
