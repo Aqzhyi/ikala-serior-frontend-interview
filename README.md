@@ -8,4 +8,10 @@ type `rails server`, `webpack --progress --colors --watch` on CLI and open `http
 
 ## Preview
 
+> 2015/11/18
+
+![](http://i.imgur.com/LO0D2Tj.png)
+
+> 2015/11/17
+
 ![](http://i.imgur.com/GZm4Pka.png)
