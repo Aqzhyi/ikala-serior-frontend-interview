@@ -4,9 +4,9 @@
     <input type="file" class="btn btn-primary" value="上傳圖片" multiple files-selected="vm.imagesSelected($files)">
     <img class="img-circle col-xs-12 col-sm-6 col-md-4" ng-repeat="img in vm.images" ng-src="{{img.url || img.data}}">
     <img class="img-circle col-xs-12 col-sm-6 col-md-4" ng-repeat="img in vm.imagesPreview" ng-src="{{img}}" style="outline: 3px dashed red;" alt="預覽上傳">
-
   </div>
   <div class="row">
+    <textarea type="text" class="form-control" placeholder="從剪貼簿貼上圖片" files-paste="vm.imagesSelected($files)"></textarea>
     <button type="button" class="btn btn-block btn-primary" ng-click="vm.upload()" ng-show="vm.imagesUpload.length">上傳</button>
   </div>
 </div>
