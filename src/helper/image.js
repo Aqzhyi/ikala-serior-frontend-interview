@@ -17,7 +17,7 @@ function factory($q) {
 
     return new $q((done, reject) => {
 
-      if (file instanceof File) {
+      if (file instanceof File || file instanceof Blob) {
         var reader = new FileReader()
         reader.onloadend = (loadEvent) => done(loadEvent.target.result)
         reader.readAsDataURL(file)
