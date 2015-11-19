@@ -16,6 +16,7 @@ module.exports = {
         }
       },
       { test: /\.css$/, loader: 'style!css' },
+      { test: /\.scss$/, loaders: ['style', 'css', 'sass'] },
       { test: '\.jpg$', loader: 'file-loader' },
       { test: '\.png$', loader: 'url-loader?mimetype=image/png' },
 

@@ -1,5 +1,6 @@
 import app from '../../app'
 import tpl from 'html!./index.html'
+import './index.scss'
 
 app.directive('homeApp', () => {
   return {
