@@ -1,4 +1,3 @@
-import angular from 'angular'
 import app from '../../app'
 
 app.directive('filesSelected', () => {
@@ -21,21 +20,18 @@ controller.$inject = [
 ]
 
 function controller($scope, $element, $attrs, $q, image) {
-  let vm = this
-
   $element.on('change.filesSelected', function (changeEvent) {
 
     let filesPromises = []
 
     if (changeEvent.target && changeEvent.target.files instanceof FileList) {
 
-      for (let index = 0; index < changeEvent.target.files.length; index++) {
+      let files = Array.from(changeEvent.target.files)
 
-        let file = changeEvent.target.files[index]
+      files.forEach((file) => {
         let promise = image.readAsDataURL(file).then((result) => file.dataURL = result)
-
         filesPromises.push(promise)
-      }
+      })
     }
 
     $q.all(filesPromises).then(() => {
