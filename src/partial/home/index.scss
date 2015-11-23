@@ -6,4 +6,8 @@
   .homeApp-image--preview {
     outline: 3px dashed red;
   }
+
+  &.filesDrop.filesDrop--dragover {
+    outline: 3px dashed #ccc;
+  }
 }
